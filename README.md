@@ -33,3 +33,24 @@ go install github.com/air-verse/air@latest
 ```bash
 air
 ```
+_________
+
+## Testing the API for terminal
+docs: https://www.codepedia.org/ama/how-to-test-a-rest-api-from-command-line-with-curl/
+```bash
+curl -I http://localhost:8000/api/healthChecker ## GET request
+```
+
+```bash
+curl -i -X HEAD http://localhost:8000/api/healthChecker ## HEAD request
+```
+
+```bash
+curl -X GET "http://localhost:8000/api/healthChecker" -H "accept: application/json" ## GET request
+```
+
+## Curl options
+    -I or --head - fetch the headers only
+    -i, --include - include the HTTP response headers in the output
+    -X, --request - specify a custom request method to use when communicating with the HTTP server (GET, PUT, DELETE&)
+
