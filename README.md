@@ -19,3 +19,17 @@ go get github.com/golang-jwt/jwt
 * postgres – A GORM driver that enables PostgreSQL database connections.
 * viper – A configuration management library that simplifies loading environment variables and config files.
 * jwt – A package for generating, parsing, and verifying JSON Web Tokens (JWTs) in Go.
+
+_________________
+# autoUpdate: air
+1. Plus tarafi: agar Windows/Mac/Linux Terminal autoUpdate air buladi va juda qulay.
+2. Minus tarafi: agar siz **goLand** ishlatsangiz xar safar (CTRL + S) bosib zzz bulib ketasizlar xD
+
+```bash
+go install github.com/air-verse/air@latest
+```
+
+### Starting air
+```bash
+air
+```
