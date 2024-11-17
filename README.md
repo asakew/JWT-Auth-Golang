@@ -63,5 +63,5 @@ __________
 
 ## Docker compose
 ```bash
-docker-compose up -d
+cd goFiber && docker-compose up --build
 ```

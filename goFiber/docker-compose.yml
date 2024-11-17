@@ -1,19 +1,20 @@
+
 services:
-  postgres:
-    image: postgres:latest
-    container_name: postgres
+  app:
+    build: .
     ports:
-      - '6500:5432'
-    volumes:
-      - progressDB:/var/lib/postgresql/data
-    env_file:
-      - ./app.env
-  pgAdmin:
-    image: dpage/pgadmin4
-    container_name: pgAdmin
-    env_file:
-      - ./app.env
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://postgres@db:5432/hello_world?sslmode=disable
+
+  db:
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: hello_world
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Root
     ports:
-      - '5050:80'
-volumes:
-  progresDB:
+      - "5432:5432"

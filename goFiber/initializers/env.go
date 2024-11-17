@@ -35,3 +35,5 @@ func LoadEnv(path string) (Env Env, err error) {
 	err = viper.Unmarshal(&Env)
 	return
 }
+
+//golang hello world + docker container + docker-compose + database: postgresql
