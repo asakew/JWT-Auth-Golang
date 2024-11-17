@@ -61,7 +61,10 @@ curl http://localhost:8000/api/healthChecker | jq . ## GET request
 
 __________
 
-## Docker compose
-```bash
-cd goFiber && docker-compose up --build
-```
+[//]: # (_## Docker compose)
+
+[//]: # (```bash)
+
+[//]: # (cd goFiber && docker-compose up --build)
+
+[//]: # (```_)
