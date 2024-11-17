@@ -49,6 +49,11 @@ curl -i -X HEAD http://localhost:8000/api/healthChecker ## HEAD request
 curl -X GET "http://localhost:8000/api/healthChecker" -H "accept: application/json" ## GET request
 ```
 
+Agar siz uni yanada chiroyli ko'rsatishni istasangiz, `jq` tavsiya qilaman:
+```bash
+curl http://localhost:8000/api/healthChecker | jq . ## GET request
+```
+
 ## Curl options
     -I or --head - fetch the headers only
     -i, --include - include the HTTP response headers in the output
