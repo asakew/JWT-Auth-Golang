@@ -59,3 +59,9 @@ curl http://localhost:8000/api/healthChecker | jq . ## GET request
     -i, --include - include the HTTP response headers in the output
     -X, --request - specify a custom request method to use when communicating with the HTTP server (GET, PUT, DELETE&)
 
+__________
+
+## Docker compose
+```bash
+docker-compose up -d
+```
