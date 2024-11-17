@@ -2,6 +2,16 @@
 
 Source: https://codevoweb.com/json-web-token-authentication-and-authorization-in-golang/
 
+```bash
+go get github.com/gofiber/fiber/v2
+go get github.com/google/uuid
+go get github.com/go-playground/validator/v10
+go get -u gorm.io/gorm
+go get gorm.io/driver/postgres
+go get github.com/spf13/viper
+go get github.com/golang-jwt/jwt
+```
+
 * fiber – A fast and lightweight web framework for building APIs in Go.
 * uuid – A package for generating and handling UUIDs
 * validator – Provides data validation capabilities for struct fields and other Go data types.
